@@ -1,6 +1,11 @@
 .left-arrow {
-  position: absolute;
+  height: 50px;
+  align-self: center;
 }
 .right-arrow {
-    position: absolute;
+  height: 50px;
+  align-self: center;
+}
+.container {
+  display: flex; 
 }

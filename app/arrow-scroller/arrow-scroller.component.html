@@ -1,8 +1,8 @@
-<div style="width: 350px">
+<div class="container">
 <ng-container>
-<button [ngStyle]="leftButtonCSS" #leftButton [hidden]="!showLeftButton" class="left-arrow" (click)="scrollLeft()">left</button>
+<button #leftButton [style.visibility]="showLeftButton ? 'visible': 'hidden'" class="left-arrow" (click)="scrollLeft()">left</button>
 <ng-content #scrollableContent>
 </ng-content>
-<button [ngStyle]="rightButtonCSS" #rightButton [style.left]="" [hidden]="!showRightButton" class="right-arrow" (click)="scrollRight()">right</button>
+<button #rightButton [style.visibility]="showRightButton ? 'visible': 'hidden'" class="right-arrow" (click)="scrollRight()">right</button>
 </ng-container>
 </div>
